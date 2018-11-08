@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title  class="text-tengah" >Drinks</ion-title>
+  </ion-navbar>
+</ion-header>
+
+ 
+<ion-content >
+ <div *ngFor="let item of Items">
+  <ion-card >
+  <ion-card-content>
+    <div class="gambar">
+     <img style="border-radius: 4%;" src="../../assets/imgs/{{item.gambar}}" alt="gambar">
+    </div>
+    <div>
+      <TABLE style="margin-top: +10%;">
+        <tr>
+          <td col-12><button (click)="openProductPage(item)" style="width: +40%;" ion-button outline small title="pesan" ><ion-icon name="book"></ion-icon></button></td>
+        <td>
+            <tr>{{item.nama}}</tr>
+           <!--<tr><ion-badge color="primary">{{item.harga}}</ion-badge></tr>-->
+          </td>
+        </tr>
+      </TABLE>
+     </div>
+  </ion-card-content>
+</ion-card>
+</div>
+</ion-content>

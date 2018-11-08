@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title  class="text-tengah" >Favorit</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item col-12>
+     <tr>
+      <td col-6><b>Resep saya</b></td>
+     </tr>
+    <tr>
+      <ion-icon (click)="oyeah(item)" name="star">{{cartItems.nama}}</ion-icon>
+      <td col-6></td>
+    </tr>
+     </ion-item>
+  </ion-list>
+ </ion-content>

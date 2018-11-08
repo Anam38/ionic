@@ -1,0 +1,36 @@
+<!--
+  Generated template for the NotaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header color="primary">
+
+  <ion-navbar>
+    <ion-title>Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+<div>
+  <ion-card >
+  <ion-card-content>
+    <div class="gambar">
+     <img style="border-radius: 4%;" src="../../assets/imgs/{{param.gambar}}" alt="gambar">
+    </div>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="leaf" item-start></ion-icon>
+           Resep
+          <ion-icon name="rose" item-end></ion-icon>
+        </ion-item>
+        <p>{{param.nama}}</p>
+        <p>{{param.step}}</p>
+         <p>{{param.harga}}</p>
+        <button style="margin-left:+5%;" (click)="openProductPage(param)" class="btnc" ion-button outline ><ion-icon name="heart"></ion-icon></button>
+      </ion-list> 
+           
+  </ion-card-content>
+</ion-card>
+</div>
+</ion-content>
